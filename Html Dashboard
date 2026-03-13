@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard de Projetos</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h2>Portfólio de Projetos</h2>
+
+<canvas id="grafico"></canvas>
+
+<script>
+
+const ctx = document.getElementById('grafico');
+
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['Em andamento','Concluído','Atrasado'],
+datasets: [{
+label: 'Projetos',
+data: [8, 5, 2]
+}]
+}
+});
+
+</script>
+
+</body>
+</html>
